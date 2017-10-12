@@ -23,6 +23,8 @@
 .byebug_history
 
 /spring/*.pid
-	
+
 /config/secrets.yml
 /config/database.yml
+
+/.framgia-ci-reports/

@@ -1,7 +1,18 @@
-<h1><%= t "static_pages.home.home" %></h1>
 <p>
-  <%= t "static_pages.home_page" %>
-  <a href= <%= t "static_pages.url.rails" %> ><%= t "static_pages.home.tit" %>
-    </a>
-  <%= t "static_pages.sample" %>
+  <div class= "center jumbotron" >
+    <h1><%= t "static_pages.home_h1" %></h1>
+
+    <h2>
+      <%= t "static_pages.home_help" %>
+      <a href= <%= t "static_pages.url.rails" %> >
+        <%= t "static_pages.home.tit" %></a>
+      <%= t "static_pages.sam_app" %>
+    </h2>
+
+    <%= link_to (t "static_pages.sign_up"), signup_path,
+      class: "btn btn-lg btn-primary" %>
+  </div>
+
+  <%= link_to image_tag((t "link.rails_p") , alt: (t "static_pages.alt_lo")),
+    (t "static_pages.url.ruby_r") %>
 </p>
