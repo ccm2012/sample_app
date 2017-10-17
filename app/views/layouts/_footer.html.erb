@@ -1,0 +1,17 @@
+<footer class= "footer" >
+  <small>
+    <%= t "static_pages.the" %>
+    <a href= <%= t "static_pages.url.help" %> >
+      <%= t "static_pages.home.tit" %></a>
+    <%= t "static_pages.by" %> <a href= <%= t "static_pages.url.michel" %> >
+      <%= t "static_pages.home.hearl" %></a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to (t "static_pages.home.about"), about_path %></li>
+      <li><%= link_to (t "static_pages.home.contact"), contact_path %></li>
+      <li><a href= <%= t "static_pages.url.new_rails" %> >
+        <%= t "static_pages.new" %></a></li>
+    </ul>
+  </nav>
+</footer>
