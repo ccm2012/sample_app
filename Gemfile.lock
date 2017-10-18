@@ -55,6 +55,7 @@ GEM
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
+    bcrypt (3.1.11)
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
@@ -331,6 +332,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   better_errors
+  bcrypt
   bootstrap-sass
   brakeman
   bundler-audit
