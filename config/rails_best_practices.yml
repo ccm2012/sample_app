@@ -19,7 +19,7 @@ NotRescueExceptionCheck: { }
 NotUseDefaultRouteCheck: { }
 NotUseTimeAgoInWordsCheck: { }
 OveruseRouteCustomizationsCheck: { customize_count: 3 }
-RemoveProtectMassAssignmentCheck: { }
+ProtectMassAssignmentCheck: { }
 RemoveEmptyHelpersCheck: { }
 #RemoveTabCheck: { }
 RemoveTrailingWhitespaceCheck: { }
@@ -28,9 +28,10 @@ RemoveUnusedMethodsInControllersCheck: {
     "StaticPagesController#home",
     "StaticPagesController#help",
     "StaticPagesController#about",
-    "UsersController#new"
-  ]
-}
+    "StaticPagesController#contact",
+    "UsersController#show",
+    "UsersController#create"
+] }
 RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
 RemoveUnusedMethodsInModelsCheck: { except_methods: [] }
 ReplaceComplexCreationWithFactoryMethodCheck: { attribute_assignment_count: 2 }
