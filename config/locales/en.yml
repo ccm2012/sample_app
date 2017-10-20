@@ -58,3 +58,6 @@ en:
       login: "Log in"
       new_user?: "New user ?"
     flash_dange: "Invalid email/password combination"
+    chk_box_rememb: "Remember me on this browser"
+  controller:
+    numb_one: "1"
