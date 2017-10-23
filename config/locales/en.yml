@@ -24,6 +24,7 @@ en:
     contact_app: "Contact the Ruby on Rails Tutorial about the sample
        app at the"
     contact_pa: "contact page"
+    acou: "Account"
     id: "#logo"
     book: "book"
     and: "and"
@@ -46,5 +47,14 @@ en:
     form_contain: "The form contains "
     confirmation: "Confirmation"
     crea_acco: "Create my account"
+    profile: "Profile"
+    setting: "Settings"
+    users: "Users"
+    log_out: "Log out"
   link:
     rails_p: "rails.png"
+  sessions:
+    html:
+      login: "Log in"
+      new_user?: "New user ?"
+    flash_dange: "Invalid email/password combination"
