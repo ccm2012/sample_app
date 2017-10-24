@@ -1,0 +1,9 @@
+<li>
+  <%= gravatar_for user, size: 50 %>
+  <%= link_to user.name, user %>
+  <% if current_user.admin? && !user.equal_user?(current_user) %>
+    <%= t "user_form.vertical_bar" %>
+    <%= link_to (t "user_form.delete"), user, method: :delete,
+      data: {confirm: (t "user_form.confirm?")} %>
+  <% end %>
+</li>

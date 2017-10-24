@@ -142,6 +142,11 @@ aside {
 
 .gravatar-edit {
   margin-top: 15px;
+
+  li {
+    float: left;
+    margin-left: 15px;
+  }
 }
 
 .debug-dump {
@@ -196,5 +201,16 @@ error-explanation {
     margin-left: 20px;
     margin-right: 170px;
     margin-top: 3px;
+  }
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
   }
 }
