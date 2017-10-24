@@ -61,3 +61,17 @@ en:
     chk_box_rememb: "Remember me on this browser"
   controller:
     numb_one: "1"
+    delete_user: "User deleted"
+    profile_update: "Profile updated"
+    need_login: "Please log in."
+  user_form:
+    url:
+      gratar: "http://gravatar.com/emails"
+    save_chang: "Save changes"
+    update_profile: "Update your profile"
+    edit_user: "Edit user"
+    delete: "Delete"
+    confirm?: "Are you sure?"
+    vertical_bar: " | "
+    change: "change"
+    all_users: "All users"

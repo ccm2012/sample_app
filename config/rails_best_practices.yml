@@ -35,7 +35,11 @@ RemoveUnusedMethodsInControllersCheck: {
     "SessionsController#create"
   ]
 }
-RemoveUnusedMethodsInHelpersCheck: { except_methods: [] }
+RemoveUnusedMethodsInHelpersCheck: {
+  except_methods: [
+    "SessionsHelper#redirect_back_or"
+  ]
+}
 RemoveUnusedMethodsInModelsCheck: {
   except_methods: [
     "User#digest"

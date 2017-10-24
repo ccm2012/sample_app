@@ -17,6 +17,10 @@ class User < ApplicationRecord
     self.email = email.downcase
   end
 
+  def equal_user? user
+    self == user
+  end
+
   def remember
     @remember_token = User.new_token
     update_attributes remember_digest: User.digest(remember_token)
