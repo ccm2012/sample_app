@@ -32,7 +32,8 @@ RemoveUnusedMethodsInControllersCheck: {
     "UsersController#show",
     "UsersController#create",
     "SessionsController#destroy",
-    "SessionsController#create"
+    "SessionsController#create",
+    "PasswordResetsController#create"
   ]
 }
 RemoveUnusedMethodsInHelpersCheck: {

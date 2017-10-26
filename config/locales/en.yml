@@ -64,11 +64,19 @@ en:
     chk_box_rememb: "Remember me on this browser"
     user_not_active: "Account not activated! Check your email for the
       activation link."
+    click_forgot_pass: "(Click here if forgot password)"
   controller:
     numb_one: "1"
     delete_user: "User deleted"
     profile_update: "Profile updated"
     need_login: "Please log in."
+    pass_empty_err: "can't be empty"
+    fail_sent_acc: "Email address not found"
+    success_sent_acc: "Email sent with password reset instructions"
+    success_reset_pass: "Password has been reset."
+    check_valid_user: "Password reset has been renewed."
+    check_expired: "Password reset has expired."
+    mailer_pass_reset: "Password reset"
   user_form:
     url:
       gratar: "http://gravatar.com/emails"
@@ -89,6 +97,15 @@ en:
     hi: "Hi "
     mail_welcome: "Welcome to the Sample App! Click on the link below to
       activate your account:"
-    password_reset_p: ", find me in app/views/user_mailer/
-      password_reset.html.erb"
-    password_reset_h1: "User#password_reset"
+  password_reset:
+    view:
+      reset: "Reset password"
+      confirm: "Confirmation"
+      forgot: "Forgot password"
+      pass: "Password reset"
+      to_reset: "To reset your password click the link below:"
+      expired: "This link will expire in two hours."
+      dont: "If you did not request your password to be reset, please ignore
+        this email and your password will stay as it is."
+    update: "Update password"
+    submit: "Submit"

@@ -22,7 +22,7 @@ class SessionsController < ApplicationController
   def user_authenticated user, session
     log_in user
     user_authenticated_next user, session
-    redirect_to user
+    redirect_back_or user
   end
 
   def user_authenticated_next user, session

@@ -191,15 +191,14 @@ error-explanation {
 }
 
 .checkbox {
+  float: left;
   margin-bottom: 10px;
-  margin-top: -10px;
 
   span {
     float: right;
     font-weight: normal;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 170px;
+    margin-left: 200px;
+    margin-right: 20px;
     margin-top: 3px;
   }
 }
