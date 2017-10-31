@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
     user = User.find_by email: session[:email].downcase
 
     if check_user_authenticate user
-      user_authenticated user, session
+      user.activated? ? user_authenticated(user, session) : user_not_activate
     else
       user_not_authenticated
     end
@@ -32,6 +32,11 @@ class SessionsController < ApplicationController
     else
       forget user
     end
+  end
+
+  def user_not_activate
+    flash.now[:warning] = t "sessions.user_not_active"
+    render :new
   end
 
   def user_not_authenticated

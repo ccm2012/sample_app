@@ -5,5 +5,8 @@
     <%= t "user_form.vertical_bar" %>
     <%= link_to (t "user_form.delete"), user, method: :delete,
       data: {confirm: (t "user_form.confirm?")} %>
+    <% if !user.activated? %>
+      <p><%= t "user_form.unactive_since" %><%= user.created_at %></p>
+    <% end %>
   <% end %>
 </li>

@@ -33,10 +33,13 @@ en:
     sample: "This is the sample application for the tutorial."
     sam_app: "sample application"
     home_h1: "Welcome to the Sample App"
+    active_good: "Account activated!"
+    check_h1: "Please check your email to activate your account."
     home_help: "This is the home page for the"
     get_help: "Get help on the Ruby on Rails Tutorial at the"
     rails_help: "Rails Tutorial help page"
     to_get_help: "To get help on this sample app, see the"
+    fail_home_h1: "Invalid activation link."
     new: "New"
     sign_up: "Sign up now!"
     alt_lo: "Rails logo"
@@ -59,6 +62,8 @@ en:
       new_user?: "New user ?"
     flash_dange: "Invalid email/password combination"
     chk_box_rememb: "Remember me on this browser"
+    user_not_active: "Account not activated! Check your email for the
+      activation link."
   controller:
     numb_one: "1"
     delete_user: "User deleted"
@@ -75,3 +80,15 @@ en:
     vertical_bar: " | "
     change: "change"
     all_users: "All users"
+    unactive_since: "unactive since "
+  mailer:
+    url:
+      active: "Activate"
+    mailer_active: "Account activation"
+    sample_app: "Sample App"
+    hi: "Hi "
+    mail_welcome: "Welcome to the Sample App! Click on the link below to
+      activate your account:"
+    password_reset_p: ", find me in app/views/user_mailer/
+      password_reset.html.erb"
+    password_reset_h1: "User#password_reset"

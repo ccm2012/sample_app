@@ -6,20 +6,25 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create!(
-  name:  "Example User",
-  email: "example@railstutorial.org",
-  password:              "foobar",
-  password_confirmation: "foobar"
+  name: "Me",
+  email: ENV["GMAIL_USERNAME"],
+  password: ENV["GMAIL_PASSWORD"],
+  password_confirmation: ENV["GMAIL_PASSWORD"],
+  admin: true,
+  activated: true,
+  activated_at: Time.zone.now
 )
 
-40.times do |n|
-  name  = Faker::Name.name
+35.times do |n|
+  name = Faker::Name.name
   email = "example-#{n+1}@railstutorial.org"
-  password = "password"
+  password = ENV["GMAIL_PASSWORD"]
   User.create!(
-    name:  name,
+    name: name,
     email: email,
-    password:              password,
-    password_confirmation: password
+    password: password,
+    password_confirmation: password,
+    activated: true,
+    activated_at: Time.zone.now
   )
 end
